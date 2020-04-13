@@ -1,6 +1,6 @@
 {
   "name": "lycwed-cordova-plugin-android-tv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova plugin to manage app for Android TV.",
   "cordova": {
     "id": "lycwed-cordova-plugin-android-tv",

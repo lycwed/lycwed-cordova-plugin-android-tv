@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" 
-  xmlns:android="http://schemas.android.com/apk/res/android" id="lycwed-cordova-plugin-android-tv" version="1.0.0">
+<plugin id="lycwed-cordova-plugin-android-tv" version="1.0.1" xmlns="http://cordova.apache.org/ns/plugins/1.0" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
 
   <name>lycwed-cordova-plugin-android-tv</name>
   <description>Cordova plugin to manage app for Android TV.</description>
@@ -17,7 +17,6 @@
       <application android:banner="@drawable/banner" />
       <application android:isGame="true" />
     </edit-config>
-    <resource-file src="resources/android/drawable/banner.png" target="app/src/main/res/drawable/banner.png" />
 
     <config-file parent="/manifest" target="app/src/main/AndroidManifest.xml" 
       xmlns:android="http://schemas.android.com/apk/res/android">
