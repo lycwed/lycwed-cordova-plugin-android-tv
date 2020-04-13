@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<plugin id="lycwed-cordova-plugin-android-tv" version="1.0.1" xmlns="http://cordova.apache.org/ns/plugins/1.0" 
+<plugin id="lycwed-cordova-plugin-android-tv" version="1.0.2" xmlns="http://cordova.apache.org/ns/plugins/1.0" 
   xmlns:android="http://schemas.android.com/apk/res/android">
 
   <name>lycwed-cordova-plugin-android-tv</name>
@@ -12,11 +12,11 @@
   </engines>
 
   <platform name="android">
-    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" 
+    <config-file parent="/manifest" mode="merge" target="app/src/main/AndroidManifest.xml"
       xmlns:android="http://schemas.android.com/apk/res/android">
       <application android:banner="@drawable/banner" />
       <application android:isGame="true" />
-    </edit-config>
+    </config-file>
 
     <config-file parent="/manifest" target="app/src/main/AndroidManifest.xml" 
       xmlns:android="http://schemas.android.com/apk/res/android">
