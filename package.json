@@ -1,0 +1,33 @@
+{
+  "name": "lycwed-cordova-plugin-android-tv",
+  "version": "1.0.0",
+  "description": "Cordova plugin to manage app for Android TV.",
+  "cordova": {
+    "id": "lycwed-cordova-plugin-android-tv",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lycwed/lycwed-cordova-plugin-android-tv.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova",
+    "ionic",
+    "android",
+    "android-tv"
+  ],
+  "engine": {
+    "name": "cordova",
+    "version": ">=8.0.0"
+  },
+  "author": "Lechevalier Yves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lycwed/lycwed-cordova-plugin-android-tv/issues"
+  },
+  "homepage": "https://github.com/lycwed/lycwed-cordova-plugin-android-tv#readme"
+}

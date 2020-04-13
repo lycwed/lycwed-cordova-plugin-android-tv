@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" 
+  xmlns:android="http://schemas.android.com/apk/res/android" id="lycwed-cordova-plugin-android-tv" version="1.0.0">
+
+  <name>lycwed-cordova-plugin-android-tv</name>
+  <description>Cordova plugin to manage app for Android TV.</description>
+  <license>MIT</license>
+  <keywords>ecosystem:cordova, cordova-android, cordova, ionic, android, android-tv</keywords>
+
+  <engines>
+    <engine name="cordova" version=">=8.0.0"/>
+  </engines>
+
+  <platform name="android">
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" 
+      xmlns:android="http://schemas.android.com/apk/res/android">
+      <application android:banner="@drawable/banner" />
+      <application android:isGame="true" />
+    </edit-config>
+    <resource-file src="resources/android/drawable/banner.png" target="app/src/main/res/drawable/banner.png" />
+
+    <config-file parent="/manifest" target="app/src/main/AndroidManifest.xml" 
+      xmlns:android="http://schemas.android.com/apk/res/android">
+      <uses-feature android:name="android.hardware.gamepad" android:required="false" />
+      <uses-feature android:name="android.software.leanback" android:required="false" />
+      <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+      <uses-feature android:name="android.hardware.faketouch" android:required="false"/>
+      <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+      <uses-feature android:name="android.hardware.camera" android:required="false"/>
+      <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+      <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+      <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+      <uses-feature android:name="android.hardware.sensor" android:required="false"/>
+    </config-file>
+
+    <config-file parent="/manifest/application" target="app/src/main/AndroidManifest.xml" 
+      xmlns:android="http://schemas.android.com/apk/res/android">
+      <activity android:label="@string/app_name" android:name="TvActivity" android:theme="@style/Theme.Leanback">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent-filter>
+      </activity>
+    </config-file>
+  </platform>
+</plugin>
